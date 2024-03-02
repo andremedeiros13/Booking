@@ -1,0 +1,31 @@
+<div *ngIf="booking; else loading" class="bookings">
+  <h2 mat-dialog-title class="title">Detalhes da Reserva - {{ booking?.bookingId }}</h2>
+  <mat-dialog-content class="mat-typography">
+    <div class="booking-details">
+      <div class="booking-detail">
+        <h3 class="detail-title"><mat-icon>event</mat-icon> Data de Início:</h3>
+        <p>{{ booking?.startDate | date: 'dd/MM/yyyy' }}</p>
+      </div>
+      <div class="booking-detail">
+        <h3 class="detail-title"><mat-icon>event</mat-icon> Data de Término:</h3>
+        <p>{{ booking?.endDate | date: 'dd/MM/yyyy' }}</p>
+      </div>
+      <div class="booking-detail">
+        <h3 class="detail-title"><mat-icon>person</mat-icon> Cliente:</h3>
+        <p>{{ booking?.customer?.name }}</p>
+      </div>
+      <div class="booking-detail">
+        <h3 class="detail-title"><mat-icon>directions_car</mat-icon> Veículo:</h3>
+        <p>{{ booking?.vehicle?.model }}</p>
+      </div>
+    </div>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-stroked-button mat-dialog-close>Fechar</button>
+  </mat-dialog-actions>
+</div>
+<ng-template #loading>
+  <div class="loading-spinner">
+    <mat-spinner></mat-spinner>
+  </div>
+</ng-template>
