@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Booking.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Booking.Api.Controllers.BaseApiController">
+            <summary>
+            Base api controller
+            </summary>
+        </member>
+        <member name="P:Booking.Api.Controllers.BaseApiController.Mediator">
+            <summary>
+            Mediator sender
+            </summary>
+        </member>
+        <member name="T:Booking.Api.Controllers.BookingController">
+            <summary>
+            Booking
+            </summary>
+        </member>
+        <member name="M:Booking.Api.Controllers.BookingController.AllBookings">
+            <summary>
+            Return All Bookings
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Booking.Api.Controllers.BookingController.GetCityById(System.Int32)">
+             <summary>
+            Bookings by Id
+             </summary>
+             <param name="id"></param>        
+             <returns></returns>
+        </member>
+        <member name="T:Booking.Api.Filters.ApiExceptionFilterAttribute">
+            <summary>
+            Exception filters
+            </summary>
+        </member>
+        <member name="M:Booking.Api.Filters.ApiExceptionFilterAttribute.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:Booking.Api.Filters.ApiExceptionFilterAttribute.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)">
+            <summary>
+            On exception event
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Booking.Api.Program">
+            <summary>
+            Starter
+            </summary>
+        </member>
+        <member name="M:Booking.Api.Program.Main(System.String[])">
+            <summary>
+            Main function
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Booking.Api.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            WebHost builder
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Booking.Api.Startup">
+            <summary>
+            Startup
+            </summary>
+        </member>
+        <member name="M:Booking.Api.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:Booking.Api.Startup.Configuration">
+            <summary>
+            Configuration
+            </summary>
+        </member>
+        <member name="M:Booking.Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configure Services
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Booking.Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Configure
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>
